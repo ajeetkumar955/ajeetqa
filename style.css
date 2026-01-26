@@ -162,13 +162,17 @@ section {
 
 /* Skill Card */
 .skill-box {
-  width: 220px;
-  height: 220px;
-  padding: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 90px 20px;
 
-  border-radius: 18px;
+  border-radius: 25px;
   border: 2px solid #eee;
-  background: white;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.08),
+    rgba(255, 255, 255, 1)
+  );
 
   cursor: pointer;
   transition: 0.35s ease;
