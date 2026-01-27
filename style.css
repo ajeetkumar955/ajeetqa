@@ -304,17 +304,10 @@ section {
     font-size: 1rem;
   }
 }
-@media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* ✅ 2 cards */
-  }
-}
-@media (max-width: 600px) {
-  .project-grid {
-    grid-template-columns: 1fr; /* ✅ 1 card */
-  }
-}
 
+/* ================================
+   Projects Section
+================================ */
 .projects {
   margin-top: 80px;
 }
@@ -324,32 +317,33 @@ section {
   margin-bottom: 40px;
 }
 
-/* Grid Layout */
+/* ✅ Responsive Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ✅ 3 cards per row */
   gap: 25px;
-  justify-content: center;
+
+  /* ✅ Automatically adjusts columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
   max-width: 1100px;
   margin: auto;
+  padding: 0 15px;
 }
 
-/* Card */
+/* ✅ Project Card */
 .project-card {
-  width: 100%; /* ✅ Grid handles sizing */
   padding: 25px;
-
   border-radius: 18px;
+
   background: linear-gradient(
     135deg,
     rgba(37, 99, 235, 0.08),
     rgba(255, 255, 255, 1)
   );
-  border: 2px solid #eee;
 
+  border: 2px solid #eee;
   text-align: left;
-  cursor: pointer;
+
   transition: 0.3s ease;
 }
 
@@ -357,7 +351,7 @@ section {
 .project-card h3 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* Subtitle */
@@ -387,4 +381,21 @@ section {
   transform: translateY(-6px);
   border-color: #2563eb;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Mobile Optimization
+================================ */
+@media (max-width: 600px) {
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-card h3 {
+    font-size: 16px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
 }
