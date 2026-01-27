@@ -164,14 +164,13 @@ section {
    Skill Cards (Paragraph Always Visible)
 ================================ */
 .skill-box {
-  width: 220px;
-  height: 220px;
-  padding: 25px;
+  width: 230px;
+  height: 330px; /* Increased height */
+  padding: 30px 20px;
 
   border-radius: 22px;
   border: 2px solid #eee;
 
-  /* Gradient Default */
   background: linear-gradient(
     135deg,
     rgba(37, 99, 235, 0.08),
@@ -180,12 +179,11 @@ section {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   text-align: center;
   cursor: pointer;
-
   transition: 0.35s ease;
 }
 
@@ -200,8 +198,10 @@ section {
 /* Paragraph Always Visible */
 .skill-box p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #444;
+  margin-top: 10px;
+  text-align: left;
 }
 
 /* Hover Effect */
@@ -262,6 +262,18 @@ section {
 
 .icon:hover img {
   filter: brightness(0) invert(1);
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2563eb;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 /* ================================
