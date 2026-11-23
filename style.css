@@ -56,7 +56,7 @@ a:focus-visible { outline: 2px solid #2f5bea; outline-offset: 4px; border-radius
 .footer {
   justify-content: space-between;
   gap: 16px;
-  margin-top: auto;
+  margin-top: 56px;
   padding-top: 24px;
   border-top: 1px solid #e2e0da;
   color: #5c5c5c;
